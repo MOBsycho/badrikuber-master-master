@@ -187,7 +187,7 @@ export default function About() {
             },
             {
               name: "Ashtami Gaadu",
-              desc: "An inner temple ritual symbolizing purity, devotion, and renewal of divine energy.",
+              desc: "An inner village  ritual symbolizing purity, devotion, and renewal of divine energy, held at the BAAMNI village.",
               side: "right",
               img: "/images/festivals/ashtami.jpg",
             },
