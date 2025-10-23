@@ -1,10 +1,7 @@
 "use client";
 import  MyNav  from "@/components/MyNav";
-// import EventTimeline from "@/components/EventTimeline";
-// import React from "react";
 import Footer from "@/components/Footer";
 import ExpandableCardModal from "@/components/expandable-card-demo-grid";
-
 export default function Events(){
   return (
     <main className="bg-primary cursor-default select-none">
