@@ -1,4 +1,4 @@
-const cards = [
+export const cards = [
   {
     description: "04-05-2025",
     title: "Badrinath Kapat Opening Ceremony",

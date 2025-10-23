@@ -1,11 +1,11 @@
 "use client";
 import  MyNav  from "@/components/MyNav";
-import EventTimeline from "@/components/EventTimeline";
-import React from "react";
+// import EventTimeline from "@/components/EventTimeline";
+// import React from "react";
 import Footer from "@/components/Footer";
-import ExpandableCardDemo from "@/components/expandable-card-demo-standard";
+import ExpandableCardModal from "@/components/expandable-card-demo-grid";
 
-const Events = () => {
+export default function Events(){
   return (
     <main className="bg-primary cursor-default select-none">
      <MyNav />
@@ -13,10 +13,8 @@ const Events = () => {
       Our Celebrations
      </h1>
      <h3 className="text-center text-brown-100 text-2xl">Of course you can also participate😉</h3>
-     <ExpandableCardDemo/>
+     <ExpandableCardModal/>
      <Footer/>
     </main>
   );
-};
-
-export default Events;
+}
