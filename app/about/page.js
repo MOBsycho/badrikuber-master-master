@@ -218,7 +218,7 @@ export default function About() {
                 />
               </div>
               <div className="md:w-1/2 bg-spiritual-cream p-6 rounded-2xl shadow-xl text-amber-100">
-                <h2 className="text-2xl font-bold mb-2">{fest.name}</h2>
+                <h2 className="text-2xl text-spiritual-gold font-bold mb-2">{fest.name}</h2>
                 <p className="text-lg font-medium">{fest.desc}</p>
               </div>
             </motion.div>
