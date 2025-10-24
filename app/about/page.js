@@ -16,9 +16,9 @@ export default function About() {
       {/* Hero Section */}
       <section className="hidden md:block about-section bg-amber-100 h-screen w-full">
         <div className="relative z-10 flex items-center justify-center h-full">
-          <div className="bg-primary bg-opacity-80 rounded-xl shadow-lg w-full max-w-6xl mx-6 sm:mx-20 p-6 sm:p-12">
+          <div className="bg-spiritual-cream bg-opacity-80 rounded-xl shadow-lg w-full max-w-6xl mx-6 sm:mx-20 p-6 sm:p-12">
             <MyNav />
-            <div className="flex flex-row justify-between mx-auto mt-12">
+            <div className=" bg-spiritual-cream flex flex-row justify-between mx-auto mt-12">
               <div className="flex w-1/2 p-8">
                 <Image
                   src="/images/sitting-2.jpeg"
@@ -46,7 +46,7 @@ export default function About() {
       </section>
 
       {/* Mobile Hero */}
-      <main className="sm:hidden flex bg-primary mt-[-2px] p-4 flex-col items-center">
+      <main className="sm:hidden flex bg-spiritual-cream mt-[-2px] p-4 flex-col items-center">
         <h1 className="mb-4 text-brown-100 text-3xl font-bold">
           About Pandukeshwar
         </h1>
@@ -72,7 +72,7 @@ export default function About() {
       </main>
 
       {/* Gods Section */}
-      <section className="bg-primary md:mx-40 md:my-10 md:rounded-xl p-6">
+      <section className="bg-spiritual-cream md:mx-40 md:my-10 md:rounded-xl p-6">
         <h1 className="text-3xl md:text-4xl font-bold text-center text-brown-100 mb-10">
           Deities of Pandukeshwar
         </h1>
@@ -145,7 +145,7 @@ export default function About() {
 
       {/* Festivals & Gaadu Section */}
       <section className="bg-amber-100 md:mx-40 md:my-10 md:rounded-xl p-6">
-        <h1 className="text-3xl md:text-4xl font-bold text-center text-brown-100 mb-10">
+        <h1 className="text-3xl md:text-4xl font-bold text-center text-spiritual-gold mb-10">
           Festivals & The Sacred Gaadu Tradition
         </h1>
 
@@ -164,7 +164,7 @@ export default function About() {
 
         {/* Vertical Timeline for Gaadu Festivals */}
         <div className="relative max-w-3xl mx-auto mt-10">
-          <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-primary rounded-full"></div>
+          <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-spiritual-cream rounded-full"></div>
 
           {[
             {
@@ -217,7 +217,7 @@ export default function About() {
                   className="rounded-xl shadow-lg object-cover h-[250px] w-full"
                 />
               </div>
-              <div className="md:w-1/2 bg-primary p-6 rounded-2xl shadow-xl text-amber-100">
+              <div className="md:w-1/2 bg-spiritual-cream p-6 rounded-2xl shadow-xl text-amber-100">
                 <h2 className="text-2xl font-bold mb-2">{fest.name}</h2>
                 <p className="text-lg font-medium">{fest.desc}</p>
               </div>
@@ -227,9 +227,9 @@ export default function About() {
 
         <p className="text-center mt-10 text-lg text-amber-900 font-semibold">
           Out of the five Gaadus, three take place in{" "}
-          <span className="text-brown-100">Pandukeshwar</span> and two
+          <span className="text-spiritual-cream">Pandukeshwar</span> and two
           within the sanctum of{" "}
-          <span className="text-brown-100">Badrinath Dham</span>.
+          <span className="text-spiritual-cream">Badrinath Dham</span>.
         </p>
       </section>
 

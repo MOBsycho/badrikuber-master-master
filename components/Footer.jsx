@@ -5,12 +5,12 @@ import Image from 'next/image';
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-primary text-amber-100 pt-12 pb-6">
+    <footer className="bg-spiritual-cream text-amber-100 pt-12 pb-6">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Temple Information */}
           <div>
-            <h3 className="text-2xl font-bold text-brown-100 mb-4">KuberJi Mandir Pandukeshwar</h3>
+            <h3 className="text-2xl font-bold text-spiritual-gold mb-4">KuberJi Mandir Pandukeshwar</h3>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
                 <MapPin className=" mt-1 flex-shrink-0" size={18} />
@@ -46,7 +46,7 @@ import Image from 'next/image';
           
           {/* Quick Links */}
           <div>
-            <h3 className="text-brown-100 text-xl font-bold  mb-4">Quick Links</h3>
+            <h3 className="text-spiritual-gold text-xl font-bold  mb-4">Quick Links</h3>
             <ul className="space-y-2 font-semibold text-sm">
               <li><Link href="/about" className="hover:text-temple-gold transition-colors">About Us</Link></li>
               <li><Link href="/events" className="hover:text-temple-gold transition-colors">Temple Events</Link></li>
@@ -59,7 +59,7 @@ import Image from 'next/image';
         
           {/* Temple Hours */}
           <div>
-            <h3 className=" text-xl font-bold text-brown-100 mb-4">Temple Hours</h3>
+            <h3 className=" text-xl font-bold text-spiritual-gold mb-4">Temple Hours</h3>
             <table className="w-full font-semibold text-sm">
               <tbody>
                 <tr>
