@@ -82,10 +82,10 @@ const ReachUs = () => {
             transition={{ duration: 0.8 }}
             className="text-center text-white px-4"
           >
-            <h1 className="text-5xl md:text-6xl font-bold mb-4 font-quicksand">
+            <h1 className="text-5xl md:text-6xl font-bold mb-4">
               How to Reach Pandukeshwar
             </h1>
-            <p className="text-xl md:text-2xl text-gray-100 max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl text-golden-100 max-w-2xl mx-auto">
               Journey to the sacred abode nestled in the Himalayas
             </p>
           </motion.div>
@@ -100,7 +100,7 @@ const ReachUs = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-4xl font-bold text-center text-spiritual-green mb-4 font-quicksand"
+            className="text-4xl font-bold text-center text-spiritual-green mb-4"
           >
             How to Reach
           </motion.h2>
@@ -108,22 +108,22 @@ const ReachUs = () => {
             Your journey to the divine temple of KuberJi
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
                 title: "By Road",
                 desc: "Accessible via NH7, 22 km from Joshimath. Regular taxis and buses available from major cities.",
-                icon: <Car className="w-12 h-12" />,
+                icon: "https://images.unsplash.com/photo-1661349758051-ff769853dce9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHV0dGFya2hhbmQlMjBoaWxseSUyMHJvYWR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600",
               },
               {
                 title: "By Train",
                 desc: "Nearest railway station: Rishikesh (270 km). Taxi and bus services available to Pandukeshwar.",
-                icon: <Train className="w-12 h-12" />,
+                icon: "https://images.unsplash.com/photo-1685858874996-94c36ea9fb91?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687",
               },
               {
                 title: "By Air",
                 desc: "Jolly Grant Airport (295 km) in Dehradun. Taxi services and buses connect to the temple.",
-                icon: <Plane className="w-12 h-12" />,
+                icon: "https://images.unsplash.com/photo-1663009586546-d1428f4d1130?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YWlycGxhbmUlMjBtb3VudGFpbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600",
               },
             ].map((mode, index) => (
               <motion.div
@@ -135,7 +135,7 @@ const ReachUs = () => {
                 className="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <div className="text-spiritual-gold mb-4 flex justify-center">
-                  {mode.icon}
+                  <Image src={mode.icon} alt={mode.title} width={100} height={100} />
                 </div>
                 <h3 className="text-2xl font-bold text-center mb-4 text-spiritual-green">
                   {mode.title}
@@ -145,7 +145,55 @@ const ReachUs = () => {
                 </p>
               </motion.div>
             ))}
-          </div>
+          </div> */}
+          <div className="grid md:grid-cols-3 gap-8">
+                      {[
+              {
+                title: "By Road",
+                desc: "Accessible via NH7, 22 km from Joshimath. Regular taxis and buses available from major cities.",
+                icon: "https://images.unsplash.com/photo-1661349758051-ff769853dce9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHV0dGFya2hhbmQlMjBoaWxseSUyMHJvYWR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600",
+              },
+              {
+                title: "By Train",
+                desc: "Nearest railway station: Rishikesh (270 km). Taxi and bus services available to Pandukeshwar.",
+                icon: "https://images.unsplash.com/photo-1685858874996-94c36ea9fb91?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687",
+              },
+              {
+                title: "By Air",
+                desc: "Jolly Grant Airport (295 km) in Dehradun. Taxi services and buses connect to the temple.",
+                icon: "https://images.unsplash.com/photo-1663009586546-d1428f4d1130?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YWlycGxhbmUlMjBtb3VudGFpbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600",
+              },
+                      ].map((mode, idx) => (
+                        <motion.div
+                          key={idx}
+                          initial={{ opacity: 0, y: 30 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.6, delay: idx * 0.1 }}
+                          viewport={{ once: true }}
+                          className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group"
+                        >
+                          <div className="relative h-56 overflow-hidden">
+                            <Image
+                              src={mode.icon}
+                              alt={mode.title}
+                              width={100}
+                              height={100}
+                              className="object-cover group-hover:scale-110 transition-transform w-full h-full duration-500"
+                              loading="lazy"
+                            />
+                            {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" /> */}
+                          </div>
+                          <div className="p-6">
+                            <h3 className="text-2xl font-bold text-spiritual-green mb-3">
+                              {mode.title}
+                            </h3>
+                            <p className="text-gray-600 leading-relaxed">
+                              {mode.desc}
+                            </p>
+                          </div>
+                        </motion.div>
+                      ))}
+                    </div>
         </div>
       </section>
 
@@ -159,7 +207,7 @@ const ReachUs = () => {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-4xl font-bold text-spiritual-green mb-4 font-quicksand">
+            <h2 className="text-4xl font-bold text-spiritual-green mb-4">
               Nearby Attractions
             </h2>
             <p className="text-gray-600 text-lg">

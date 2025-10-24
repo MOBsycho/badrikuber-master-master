@@ -197,7 +197,7 @@ export const NavbarLogo = () => {
       href="/"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal">
      <RotatingLogo/>
-      <div className="font-bold text-spiritual-green text-xl font-quicksand">KuberJi Mandir
+      <div className="font-bold text-spiritual-green text-xl ">KuberJi Mandir
       <br/>
       <div className="text-sm font-medium text-gold-accent">
         Pandukeshwar

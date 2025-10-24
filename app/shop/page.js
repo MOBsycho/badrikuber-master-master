@@ -4,6 +4,9 @@ import Footer from '@/components/Footer';
 import { motion } from "framer-motion"
 import MyNav from '@/components/MyNav';
 import Image from 'next/image';
+import { Button } from '@/components/ui/button';
+import { ProductCard } from '@/components/cart/ProductCard';
+import { Header } from '@/components/cart/CartHeader';
 
 
 const products = [
@@ -37,46 +40,25 @@ export default function Shop() {
   return (
     <section className="bg-primary cursor-default select-none"> 
     <MyNav/>
-    <div className="min-h-screen bg-primary p-8">
-      <motion.div 
-      initial={{opacity:0, y:100}}
-      whileInView={{opacity:1, y:0}}
-      transition={{duration:1, ease: 'easeInOut'}}
-      viewport={{once:true}}
-      className='flex flex-col items-center justify-center mb-8'>
-       
-      <h1 className="text-3xl font-bold text-center mb-4 text-brown-100 flex items-center justify-center">
-         Welcome to Our E-Store</h1>
-         <h3 className='text-brown-100 text-center font-bold text-xl'>
-          Bhakti se Bhara, Seva ke Liye Samarpit.
-         </h3> 
-         <Image src="/products/products.png" className='saturate-200' width={200} height={200} alt="Store"/>
-         </motion.div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        {products.map((product) => (
-          <motion.div
-           initial={{opacity:0,y:100}}
-           whileInView={{opacity:1,y:0}}
-           transition={{duration:1, ease:"easeInOut"}}
-           viewport={{once:true}}
-          key={product.id}
-            className="border-brown-100 border-3 text-green-700 rounded-xl shadow-lg p-4 flex flex-col items-center  transition"
-          >
-            <Image
-              src={product.image}
-              alt={product.name}
-              width={200}
-              height={200}
-              className="rounded-xl"
-            />
-            <h2 className="text-xl font-semibold mt-4">{product.name}</h2>
-            <p className="text-lg font-medium text-green-700">{product.price}</p>
-            <button className="mt-2 px-4 font-semibold py-2 bg-amber-100 text-primary rounded-lg ">
-              Add to Cart
-            </button>
-          </motion.div>
-        ))}
-      </div>
+    <div className="min-h-screen bg-background">
+      {/* <Header /> */}
+      
+      <main className="container py-12">
+        <div className="mb-12 text-center">
+          <h2 className="text-4xl font-bold mb-4 text-spiritual-gold bg-clip-text ">
+            Featured Products
+          </h2>
+          <p className="text-muted-foreground text-lg">
+            Discover our collection of handloom products
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {products.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
+      </main>
     </div>
     <Footer/>
     </section>

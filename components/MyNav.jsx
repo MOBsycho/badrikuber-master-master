@@ -49,7 +49,7 @@ export default function MyNav() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="relative w-full bg-white shadow-sm">
+    <div className="relative w-full bg-white">
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody>

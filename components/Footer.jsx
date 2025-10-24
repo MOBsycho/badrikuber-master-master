@@ -51,7 +51,7 @@ import Image from 'next/image';
               <li><Link href="/about" className="hover:text-temple-gold transition-colors">About Us</Link></li>
               <li><Link href="/events" className="hover:text-temple-gold transition-colors">Temple Events</Link></li>
               <li><Link href="/services" className="hover:text-temple-gold transition-colors">Temple Services</Link></li>
-              <li><Link href="/gallery" className="hover:text-temple-gold transition-colors">Photo Gallery</Link></li>
+              <li><Link href="/media" className="hover:text-temple-gold transition-colors">Photo Gallery</Link></li>
               <li><Link href="/contact" className="hover:text-temple-gold transition-colors">Contact Us</Link></li>
               <li><Link href="/donate" className="hover:text-temple-gold transition-colors">Make a Donation</Link></li>
             </ul>

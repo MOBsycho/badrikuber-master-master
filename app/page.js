@@ -9,15 +9,31 @@ export default function Home() {
   return (
     <div className="bg-[#FAF8F5]">
       <MyNav />
-      
+
       {/* Hero Section - Split Design Inspired by Reference */}
       <section className="relative min-h-[600px] md:min-h-[700px] overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
             <defs>
-              <pattern id="temple-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-                <text x="50" y="50" fontSize="40" fill="#2D5F4C" textAnchor="middle" fontFamily="serif">ॐ</text>
+              <pattern
+                id="temple-pattern"
+                x="0"
+                y="0"
+                width="100"
+                height="100"
+                patternUnits="userSpaceOnUse"
+              >
+                <text
+                  x="50"
+                  y="50"
+                  fontSize="40"
+                  fill="#2D5F4C"
+                  textAnchor="middle"
+                  fontFamily="serif"
+                >
+                  ॐ
+                </text>
               </pattern>
             </defs>
             <rect width="100%" height="100%" fill="url(#temple-pattern)" />
@@ -41,28 +57,32 @@ export default function Home() {
               >
                 Divine Abode of Prosperity
               </motion.span>
-              
+
               <h1 className="text-5xl md:text-6xl font-bold mb-6 text-[#5A3825] leading-tight">
-                KuberJi<br />
+                KuberJi
+                <br />
                 <span className="text-spiritual-gold">Mandir</span>
               </h1>
-              
+
               <p className="text-gray-700 text-lg mb-8 leading-relaxed">
-                Experience the divine presence of Lord Kuber, the celestial treasurer. 
-                This sacred temple in Pandukeshwar welcomes devotees seeking blessings 
-                of wealth and spiritual prosperity.
+                Experience the divine presence of Lord Kuber, the celestial
+                treasurer. This sacred temple in Pandukeshwar welcomes devotees
+                seeking blessings of wealth and spiritual prosperity.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/howtoreachus">
-                  <button className="bg-[#C97A3C] hover:bg-[#B5682B] text-white px-8 py-4 rounded font-semibold transition-all duration-300 hover:scale-105 shadow-lg">
-                    Plan Your Visit
-                  </button>
+                <Link
+                  href="/howtoreachus"
+                  className="bg-[#C97A3C] hover:bg-[#B5682B] text-white px-8 py-4 rounded font-semibold transition-all duration-300 hover:scale-105 shadow-lg text-center"
+                >
+                  Plan Your Visit
                 </Link>
-                <Link href="/about">
-                  <button className="border-2 border-spiritual-green text-spiritual-green hover:bg-spiritual-green hover:text-white px-8 py-4 rounded font-semibold transition-all duration-300">
-                    Learn More
-                  </button>
+
+                <Link
+                  href="/about"
+                  className="border-2 border-spiritual-green text-spiritual-green hover:bg-spiritual-green hover:text-white px-8 py-4 rounded font-semibold transition-all duration-300 text-center"
+                >
+                  Learn More
                 </Link>
               </div>
             </div>
@@ -99,7 +119,7 @@ export default function Home() {
             loading="lazy"
           />
         </div>
-        
+
         <div className="relative max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
@@ -115,8 +135,12 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: idx * 0.1 }}
                 viewport={{ once: true }}
               >
-                <div className="text-4xl md:text-5xl font-bold mb-2">{stat.number}</div>
-                <div className="text-sm md:text-base opacity-90">{stat.label}</div>
+                <div className="text-4xl md:text-5xl font-bold mb-2">
+                  {stat.number}
+                </div>
+                <div className="text-sm md:text-base opacity-90">
+                  {stat.label}
+                </div>
               </motion.div>
             ))}
           </div>
@@ -149,12 +173,14 @@ export default function Home() {
               The Divine Treasury of Lord Kuber
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              Lord Shri Badrinath&apos;s treasurer, Shri Kuber Bhandari, the treasurer of the gods, 
-              resides in this divine Kuber temple in Pandukeshwar during winters.
+              Lord Shri Badrinath&apos;s treasurer, Shri Kuber Bhandari, the
+              treasurer of the gods, resides in this divine Kuber temple in
+              Pandukeshwar during winters.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Located near Yog Badri, one of the Panch Badri, this sacred temple sits at 
-              the base of the Balkunwar peak at an altitude of 4,600 meters.
+              Located near Yog Badri, one of the Panch Badri, this sacred temple
+              sits at the base of the Balkunwar peak at an altitude of 4,600
+              meters.
             </p>
             <Link href="/about">
               <button className="bg-[#C97A3C] hover:bg-[#B5682B] text-white px-6 py-3 rounded font-semibold transition-all duration-300">
@@ -182,7 +208,7 @@ export default function Home() {
               Explore the divine beauty of KuberJi Mandir
             </p>
           </motion.div>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
             {[
               "/images/temple/temple-top-2.jpeg",
@@ -208,7 +234,7 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
-          
+
           <div className="text-center">
             <Link href="/media">
               <button className="border-2 border-spiritual-gold text-spiritual-gold hover:bg-spiritual-gold hover:text-white px-8 py-3 rounded font-semibold transition-all duration-300">
@@ -239,7 +265,7 @@ export default function Home() {
               Participate in sacred rituals and receive divine blessings
             </p>
           </motion.div>
-        
+
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
@@ -280,7 +306,9 @@ export default function Home() {
                   <h3 className="text-2xl font-bold text-spiritual-green mb-3">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">{service.desc}</p>
+                  <p className="text-gray-600 leading-relaxed">
+                    {service.desc}
+                  </p>
                 </div>
               </motion.div>
             ))}
@@ -332,8 +360,8 @@ export default function Home() {
               Support Our Temple
             </h2>
             <p className="text-xl mb-8 text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Your generous donations help us maintain the temple, conduct sacred ceremonies, 
-              and serve our devotees with love and devotion.
+              Your generous donations help us maintain the temple, conduct
+              sacred ceremonies, and serve our devotees with love and devotion.
             </p>
             <button className="bg-[#C97A3C] hover:bg-[#B5682B] text-white px-10 py-4 rounded text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg">
               Make a Donation

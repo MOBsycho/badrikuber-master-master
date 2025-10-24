@@ -1,7 +1,7 @@
 "use client";
 import  MyNav  from "@/components/MyNav";
 import Footer from "@/components/Footer";
-import ExpandableCardModal from "@/components/expandable-card-demo-grid";
+// import ExpandableCardModal from "@/components/expandable-card-demo-grid";
 export default function Events(){
   return (
     <main className="bg-primary cursor-default select-none">
@@ -10,7 +10,7 @@ export default function Events(){
       Our Celebrations
      </h1>
      <h3 className="text-center text-brown-100 text-2xl">Of course you can also participate😉</h3>
-     <ExpandableCardModal/>
+     
      <Footer/>
     </main>
   );
