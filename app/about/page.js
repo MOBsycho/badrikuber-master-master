@@ -164,7 +164,7 @@ export default function About() {
 
         {/* Vertical Timeline for Gaadu Festivals */}
         <div className="relative max-w-3xl mx-auto mt-10">
-          <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-spiritual-cream rounded-full"></div>
+          <div className="absolute left-1/2  transform -translate-x-1/2 h-full border-l-4 border-spiritual-cream rounded-full"></div>
 
           {[
             {
@@ -217,7 +217,7 @@ export default function About() {
                   className="rounded-xl shadow-lg object-cover h-[250px] w-full"
                 />
               </div>
-              <div className="md:w-1/2 bg-spiritual-cream p-6 rounded-2xl shadow-xl text-amber-100">
+              <div className="md:w-1/2 z-[2] bg-spiritual-cream p-6 rounded-2xl shadow-xl text-amber-100">
                 <h2 className="text-2xl text-spiritual-gold font-bold mb-2">{fest.name}</h2>
                 <p className="text-lg font-medium">{fest.desc}</p>
               </div>
